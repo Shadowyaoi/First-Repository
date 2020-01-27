@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header>
+  <h1>Tammy and WD's Pizzeria </h1>
+  </header>
+  <nav>
+    <p><a href="Restaurant-Homepage.html" class="btn badge-pill">Homepage</a></p>
+    <p><a href="Menu.html" class="btn badge-pill">Menu</a></p>
+    <p><a href="Restaurant-Contact.html" class="btn badge-pill">Contact Us</a></p>
+  </nav>
+  <div class="clear-float"></div>
+  <hr />
+  <form action="submit.html" method="POST">
+    <label for="Name">Name:</label> <br />
+    <input type="text" id="Name" name="Name" required/> <br />
+  </form>
+  <form action="submit.html" method="POST">
+    <label for="Email">Email:</label> <br />
+    <input type="text" id="Email" name="Email" required/> <br />
+  </form>
+  <form action="submit.html" method="POST">
+    <label for="Phone-number">Phone:</label> <br />
+    <input type="text" id="Phone-number" name="Phone-number" required/> <br />
+  </form>
+  <label for="reason">Reason for Inquiry:</label><br />
+  <select id="reason" name="reason">
+  <option value="default" selected>Catering</option>
+  <option value="private">Private Party</option>
+  <option value="feedback">Feedback</option>
+  <option value="other">Other</option>
+  </select>
+  <form action="submit.html" method="POST">
+    <label for="information">Additional Information:</label><br />
+  <div>
+  <textarea id=briefDescription name="briefDescription"></textarea><br />
+</div>
+<fieldset>
+  <legend>Have you been to the restaurant?:</legend><br />
+  <input type="radio" id="choice1" name="visiting" value="yes">
+  <label for="choice1">Yes</label><br />
+  <input type="radio" id="choice2" name="visiting" value="no">
+<label for="choice2">No</label><br />
+</fieldset>
+<fieldset>
+  <legend>Best time to contact you: (check all that apply)</legend><br />
+<input type="checkbox" id="Mon" name="Mon" value="Mon">
+<label for="Mon">M</label><br />
+<input type="checkbox" id="Tues" name="Tues" value="Tues">
+<label for="Tues">T</label><br />
+<input type="checkbox" id="Wed" name="Wed" value="Wed">
+<label for="Wed">W</label><br />
+<input type="checkbox" id="thurs" name="thurs" value="thurs">
+<label for="thurs">Th</label><br />
+<input type="checkbox" id="fri" name="fri" value="fri">
+<label for="fri">F</label><br />
+</fieldset>
+<input type="submit" name="submit" value="Send Request"/><br />
+<label for ="submit"></label><br />
+<hr />
+  <footer>
+    <p><strong>440 Clematis lane, White Deer, MN, 55444</strong><p>
+      <p><strong>(555)413-2504</p></strong>
+    <p>&copy; 2020 Kirstie Blackmon. All rights reserved.</p>
+  </footer>
+</body>
+</html>
